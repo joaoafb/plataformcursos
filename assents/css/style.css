@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600&display=swap');
+
+body {
+    margin: 0;
+  
+    user-select: none;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #282c34;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+    color: white;
+ margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+
+  
+body::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: transparent;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid transparent;  /* creates padding around scroll thumb */
+  }
+  .App-header{
+    padding: 0px 10px 10px 0px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+ 
+  
+.logo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  .logo img{
+    
+      width: 100px;
+  }
+
+  .logo span{
+      font-size: 15pt;
+  
+  }
+  .menu{
+    display: flex;
+    flex-wrap: wrap;
+      position: relative;
+      right: 0;
+      float: right;
+  }
+
+  .btnmenu{
+      cursor: pointer;
+      margin: 3px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+      width: 120px;
+      height: 50px;
+      background-color:transparent;
+      border: 0;
+      border-radius: 5px;
+      outline: none;
+      border: 0;
+      color: white;
+      transition: 0.9s;
+  }
+
+  .btnmenu:hover{
+    border: 1px solid #fd7e14;
+    color: #fd7e14;
+    transition: 0.9s;
+    background-color:#32343a;
+  }
+  .btnmenu i{
+      zoom:160%;
+      color: #fd7e14;
+      transition: 0.9s;
+  }
+  .btnmenu i:hover{
+      opacity: 50%;
+      transition: 0.9s;
+  }
+
+
+
+  .banner{
+    flex-wrap: wrap;
+box-sizing: border-box;
+   display:flex;
+  
+    width: 100%;
+    background-color: #32343a2f;
+    border-radius: 10px;
+  }
+
+  .cursos{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .boxcurso{
+    
+   
+    margin: 10px;
+    width: 200px;
+    height:auto;
+    background-color: black;
+    transition: 0.5s;
+    border-radius: 5px;
+   
+    border: 0;
+    margin-top: 50px;
+    
+  
+  }
+
+.title{
+  font-size: 20pt;
+  background-color: #32343a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.imgcurso{
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.imgcurso:hover{
+    filter: blur(0.5px);
+    transform: scale(106%);
+    transition: 0.5s;
+}
+.inforcurso{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    border-radius: 8px;
+    text-align: left;
+    width:190px;
+    height: auto;
+    background-color: #282c3475;
+    transition: 0.5s;
+}
+.inforcurso:hover{
+    transition: 0.5s;
+    background-color: #282c34;
+}
+.infornome{
+  text-align: left;
+    font-size: 12pt;
+
+   
+}
+.infordesc{  text-align: left;
+    color: gainsboro;
+    font-size: 8pt;
+}
+.inforvalor{  text-align: left;
+    
+  color: white;
+    font-size: 16pt;
+}
+
+
+form{
+  padding: 20px;
+  text-align: left;
+  width: 100%;
+  height: auto;
+  background-color: #32343a;
+  display: flex;
+  flex-direction: column;
+}
+.input::placeholder{
+  color: gray;
+}
+li{
+  margin: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+.input{
+  margin-top: 5PX;
+  margin-bottom: 5px;
+  padding-left: 10px;
+
+  height: 40px;
+  border-radius: 5px;
+  background-color:#1C1C1C;
+  color: white;
+  border:0;
+  outline: none;
+}
+
+.textarea{
+ 
+  padding-top: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  background-color:#1C1C1C;
+  color: white;
+  border:0;
+  outline: none;
+}
+#numbercarrinho{
+ top: -10px;
+ position: relative;
+color: #fd7e14;
+font-size: 10pt;
+ 
+}
+
+
+.btncomprar{
+  margin-bottom: 20px;
+  color: white;
+  width: 100%;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  background-color: #1C1C1C;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center; 
+  transition: 0.5s;
+}
+.btncomprar:hover{
+  border: 1px solid #fd7e14;
+  color: #fd7e14;
+  transition: 0.5s;
+  background-color:transparent;
+}
+
+
+
+.btnnaoquero{
+  margin-bottom: 20px;
+  color: red;
+  width: 100%;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  background-color: #1C1C1C;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center; 
+  transition: 0.5s;
+}
+.btnnaoquero:hover{
+  border: 1px solid red;
+  color: red;
+  transition: 0.5s;
+  background-color:transparent;
+}
+  @media screen and (max-width: 600px){
+.title i{
+    margin: 0 auto;
+    transform: rotate(90deg);
+}
+      
+  }

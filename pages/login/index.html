@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="Plataform  Cursos"
+      content="Esta é uma Plataforma Onde Será Possivel Assistir Aulas de Cursos Pagos Por Apenas Uma Taxa
+      Minima Só Para Manter o Site Online. Video-Aulas Sem Interrupçoes, Sem Anuncios e No Melhor Servidor Para Que Haja Instabilidade ao Assistir As Aulas!
+      "
+    />
+
+    <title>Plataform Cursos</title>
+    <link rel="stylesheet" href="../../assents/css/style.css">
+  </head>
+  <body>
+      <div class="App-header">
+          <div class="logo">
+            <img
+           
+           src="../../assents/img/LOGO2.png"
+            />
+            <span>Login | Plataform Cursos</span>
+          </div>
+
+         
+      </div>
+    </div>
+      <BR>
+          
+        
+        </div> </div>
+        <br>
+<form action="" onsubmit="return false">
+
+    <label for="">Seu Usuario:</label>
+    <input id="inputusuario" placeholder="Digite Aqui" class="input" type="text" autocomplete="off" required>
+    <label for="">Sua Senha:</label>
+    <input id="inputsenha" placeholder="Digite Aqui" class="input" type="password" autocomplete="off" required>
+    <br>
+   
+    <input onclick="logar()" style="   background-color:#1C1C1C;width:100%; " class="btnmenu" type="submit" value="Entrar">
+
+    
+</form>
+<button  id="cadastro" style=" width:100%; " class="btnmenu"  >Não tem Conta? Cadastre Agora!</button>
+
+
+
+        <!--CURSOS EM PROMOCAO-->
+        
+
+
+
+
+
+
+   
+
+  </body>
+  <script src="login.js"></script>
+    <script src="https://kit.fontawesome.com/d3c038606f.js" crossorigin="anonymous">
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script> 
+<script>
+  // Initialize Cloud Firestore through Firebase
+firebase.initializeApp({
+  apiKey: "AIzaSyBuzKzNvSGR4HVw81OmThSXUcEERWPHpdA",
+  authDomain: "plataformcursos.firebaseapp.com",
+  projectId: "plataformcursos",
+  storageBucket: "plataformcursos.appspot.com",
+  messagingSenderId: "447194653870",
+  appId: "1:447194653870:web:3744f2493a8d9f8590f93f",
+  measurementId: "G-46BZ5TBTYK"
+});
+
+var db = firebase.firestore();
+</script>
+</html>

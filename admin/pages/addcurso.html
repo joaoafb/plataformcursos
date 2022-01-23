@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="Plataform  Cursos"
+      content="Esta é uma Plataforma Onde Será Possivel Assistir Aulas de Cursos Pagos Por Apenas Uma Taxa
+      Minima Só Para Manter o Site Online. Video-Aulas Sem Interrupçoes, Sem Anuncios e No Melhor Servidor Para Que Haja Instabilidade ao Assistir As Aulas!
+      "
+    />
+
+    <title>Plataform Cursos</title>
+    <link rel="stylesheet" href="../assents/css/style.css">
+  </head>
+  <body>
+      <div class="App-header">
+          <div class="logo">
+            <img
+           
+           src="../assents/img/LOGO2.png"
+            />
+            <span>ADMIN | Plataform Cursos</span>
+          </div>
+
+        
+      </div>
+    </div>
+      <BR><div class="banner"></div>
+          
+        <div style="margin: 0 auto;" class="boxcurso">
+            <img style="margin-top: 50px;" src="" id="img" alt="">
+            <div class="inforcurso">
+                <h1 style="color: #fd7e14;" id="nomecurso"></h1>
+              
+                <h2 style="color: #fd7e14;" id="valorcurso"></h2>
+            </div>
+        </div> </div>
+        <br>
+<form action="" onsubmit="return false">
+
+    <label for="">Nome do Curso:</label>
+<input id="inputnome" class="input" placeholder="Digite Aqui" type="text" autocomplete="off" required>
+    <label for="">Descrição Do Curso:</label>
+<textarea id="inputdescricao" name="" placeholder="Digite Aqui" class="textarea" cols="30" rows="10"></textarea>
+    <label for="">Valor Do Curso:</label>
+    <input id="inputvalor" placeholder="Digite Aqui" class="input" type="number" autocomplete="off" required>
+    <label for="">Categoria do Curso:</label>
+    <input id="inputcategoria" placeholder="Digite Aqui" class="input" type="text" autocomplete="off" required>
+    <br>
+    <label  for="">URL da Imagem do Curso:</label>
+    <input placeholder="Digite Aqui" id="inputlinkimg" class="input" type="text" autocomplete="off" required>
+    <label for="">Valor Real do Curso:</label>
+    <input id="inputvalorreal" placeholder="Digite Aqui" class="input" type="number" autocomplete="off" required>
+    <label for="">Quantidade de Aulas Do Curso:</label>
+    <input id="inputaulas" placeholder="Digite Aqui" class="input" type="number" autocomplete="off" required>
+    <label for="">Quantidade de Horas do Curso:</label>
+    <input id="inputhoras" placeholder="Digite Aqui" class="input" type="number" autocomplete="off" required>
+    <br>
+    <input onclick="addcurso()" style=" width:50%; " class="btnmenu" type="submit" value="Cadastrar Curso">
+</form>
+
+
+
+        <!--CURSOS EM PROMOCAO-->
+        
+
+
+
+
+
+
+   
+
+  </body>
+    <script src="https://kit.fontawesome.com/d3c038606f.js" crossorigin="anonymous">
+  </script>
+  <script src="../assents/js/login.js"></script>
+  <script src="../assents/js/preview.js"></script>
+  <script src="addcurso.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script> 
+<script>
+  // Initialize Cloud Firestore through Firebase
+firebase.initializeApp({
+  apiKey: "AIzaSyBuzKzNvSGR4HVw81OmThSXUcEERWPHpdA",
+  authDomain: "plataformcursos.firebaseapp.com",
+  projectId: "plataformcursos",
+  storageBucket: "plataformcursos.appspot.com",
+  messagingSenderId: "447194653870",
+  appId: "1:447194653870:web:3744f2493a8d9f8590f93f",
+  measurementId: "G-46BZ5TBTYK"
+});
+
+var db = firebase.firestore();
+</script>
+</html>
